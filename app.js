@@ -11,7 +11,7 @@ const MongoDBStore = require("connect-mongodb-session")(session);
 const errorController = require('./controllers/error');
 const User = require('./models/user');
 
-const MONGODB_URI =  "mongodb+srv://AyushKatoch:ayush2002@cluster0.nj2xk.mongodb.net/shop"
+const MONGODB_URI =  "mongodb+srv://<username>:<password>@cluster0.nj2xk.mongodb.net/shop"
   
 
 const app = express();
