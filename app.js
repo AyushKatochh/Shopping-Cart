@@ -12,8 +12,7 @@ const multer = require('multer');
 const errorController = require('./controllers/error');
 const User = require('./models/user');
 
-const MONGODB_URI =
-'mongodb+srv://AyushKatoch:ayush2002@cluster0.nj2xk.mongodb.net/shop?retryWrites=true&w=majority';
+const MONGODB_URI = "YOUR_URI";
 
 const app = express();
 const store = new MongoDBStore({
@@ -58,7 +57,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use(
   session({
-    secret: 'my secret',
+    secret: 'YOUR_SECRET',
     resave: false,
     saveUninitialized: false,
     store: store
