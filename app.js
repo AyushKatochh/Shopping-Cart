@@ -15,6 +15,7 @@ const User = require('./models/user');
 const MONGODB_URI = "YOUR_URI";
 
 const app = express();
+// Adding Database
 const store = new MongoDBStore({
   uri: MONGODB_URI,
   collection: 'sessions'
